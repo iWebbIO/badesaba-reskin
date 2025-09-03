@@ -1,0 +1,224 @@
+:root {
+    --bg-color: #1a1b26;
+    --card-bg: #24283b;
+    --text-color: #c0caf5;
+    --text-color-muted: #787c99;
+    --primary-color: #7aa2f7;
+    --holiday-color: #f7768e;
+    --border-color: #414868;
+}
+
+body,
+html,
+bs-root,
+bs-layout,
+.layout-wrapper,
+bs-index,
+.bg-white,
+.bg-light,
+bs-calendar-section,
+bs-convert-date {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    font-family: 'Vazirmatn', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+div,
+li {
+    color: var(--text-color) !important;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--border-color);
+    border-radius: 10px;
+    border: 2px solid var(--bg-color);
+}
+
+.card,
+#calendar,
+.events,
+.convert-date-container .date-box-container {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 12px !important;
+}
+
+.bs__title,
+.title {
+    font-weight: 600 !important;
+    color: var(--text-color) !important;
+}
+
+a {
+    color: var(--primary-color) !important;
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+hr {
+    border-top: 1px solid var(--border-color) !important;
+}
+
+.content .clock {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+}
+
+.content .date-shamsi,
+.content .locale-time-text {
+    color: var(--text-color) !important;
+}
+
+.content .date-ghamary,
+.content .date-milady {
+    color: var(--text-color-muted) !important;
+}
+
+.circle {
+    background-color: var(--border-color) !important;
+}
+
+#calendar .month-year,
+#calendar .month-next-prev {
+    color: var(--text-color) !important;
+}
+
+.day-header span {
+    color: var(--text-color-muted) !important;
+}
+
+#calendar .day-list .day {
+    border: 1px solid transparent !important;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+}
+
+#calendar .day-list .day:hover {
+    background-color: rgba(122, 162, 247, 0.2) !important;
+    transform: scale(1.05);
+}
+
+.day .jalali,
+.day .qamari,
+.day .miladi {
+    color: var(--text-color) !important;
+}
+
+.day.today,
+.day.selected {
+    background-color: var(--primary-color) !important;
+    color: var(--bg-color) !important;
+    border-radius: 8px !important;
+    transform: scale(1.05);
+}
+
+.day.today *,
+.day.selected * {
+    color: var(--bg-color) !important;
+    font-weight: 700;
+}
+
+.day.holiday,
+.day.holiday * {
+    color: var(--holiday-color) !important;
+}
+
+.day.today.holiday,
+.day.today.holiday * {
+    background-color: var(--holiday-color) !important;
+    color: var(--bg-color) !important;
+}
+
+.day.no-hover:hover {
+    background-color: transparent !important;
+    transform: none;
+}
+
+.events .header span {
+    color: var(--primary-color) !important;
+}
+
+.events .content .event {
+    border: 1px solid transparent !important;
+    margin-bottom: 4px !important;
+    border-radius: 8px;
+    padding: 0.75rem !important;
+    transition: background-color 0.2s ease;
+}
+
+.events .content .event:hover {
+    background-color: rgba(122, 162, 247, 0.1) !important;
+}
+
+.events .content .event.selected,
+.events .content .event.today {
+    background-color: rgba(122, 162, 247, 0.15) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.events .content .event.holiday .titles * {
+    color: var(--holiday-color) !important;
+}
+
+.form-label,
+.color-gray {
+    color: var(--text-color-muted) !important;
+}
+
+.form-control,
+.form-select {
+    background-color: #31364a !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-color) !important;
+}
+
+select option {
+    background: var(--card-bg);
+    color: var(--text-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border: none !important;
+    border-radius: 8px !important;
+    color: var(--bg-color) !important;
+    font-weight: 600;
+}
+
+.btn-date-type {
+    background-color: var(--card-bg) !important;
+    color: var(--text-color-muted) !important;
+    border-color: var(--border-color) !important;
+}
+
+.btn-date-type.selected {
+    background-color: var(--primary-color) !important;
+    color: var(--bg-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.convert-date-container .date-box-container .header-title {
+    background-color: #31364a;
+    color: var(--primary-color) !important;
+}
+
+bs-index>bs-calendar-section.container-fluid.px-0.bg-white {
+    background-color: var(--bg-color) !important;
+}

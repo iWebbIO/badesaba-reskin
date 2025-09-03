@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Badesaba Reskinned",
+  "version": "1.0",
+  "description": "A complete dark-themed reskin of badesaba.ir, focusing on the calendar and removing clutter.",
+  "homepage_url": "https://github.com/iwebbio/",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://badesaba.ir/*"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
